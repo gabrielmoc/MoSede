@@ -10,7 +10,7 @@ LINGUAGENS DE PROGRAMAÇÃO: Python-Django;
 
 LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 
-# Equipe (2º período, turma B):
+# Desenvolvedores (2º período, turma B):
 -> Antonio Valença (atvn@cesar.school) <br/>
 <br/>
 -> Luís Felipe Furlaneto Lima (lffl@cesar.school) <br/>
