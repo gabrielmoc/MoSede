@@ -1,12 +1,12 @@
 # MoSede
 
-PRODUTO: MoSede é o projeto de uma aplicação web que visa intermediar a venda de bebidas entre fornecedores e clientes, sendo um marketplace digital para consumidores de vinho, cerveja, licor, whiskey e demais bebidas alcoólicas.
+PRODUTO: MoSede é o projeto de uma aplicação web que visa intermediar a venda de bebidas entre fornecedores e clientes, sendo um marketplace digital para consumidores de vinho, cerveja, licor, whiskey e demais bebidas alcoólicas;
 
-FUNCIONALIDADES-BASE: Buscar por bebidas, feed de fornecedores e produtos, carrinho de compras
+FUNCIONALIDADES-BASE: Buscar por bebidas, feed de fornecedores e produtos, carrinho de compras;
 
-TECNOLOGIAS: VisualStudio(teste de códigos), Github (commit de códigos), Jira (gestão)
+TECNOLOGIAS: VisualStudio(teste de códigos), Github (commit de códigos), Jira (gestão);
 
-LINGUAGENS DE PROGRAMAÇÃO: Python-Django
+LINGUAGENS DE PROGRAMAÇÃO: Python-Django;
 
 LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 
