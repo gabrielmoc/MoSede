@@ -23,3 +23,5 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 <br/>
 -> Diego Rodrigues Figueiredo (drf2@cesar.school) <br/>
 
+# Links Externos:
+-> JIRA: https://mosede.atlassian.net/jira/core/projects/MS/board?atlOrigin=eyJpIjoiNzUyMzc3MmE2Mzg3NDdiYmI1ODEyYWVhZmNmOTMxM2UiLCJwIjoiaiJ9
