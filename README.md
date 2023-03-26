@@ -24,4 +24,8 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 -> Diego Rodrigues Figueiredo (drf2@cesar.school) <br/>
 
 # Links Externos:
--> JIRA: https://mosede.atlassian.net/jira/core/projects/MS/board?atlOrigin=eyJpIjoiNzUyMzc3MmE2Mzg3NDdiYmI1ODEyYWVhZmNmOTMxM2UiLCJwIjoiaiJ9
+-> JIRA: https://mo-sede.atlassian.net/jira/software/projects/MOS/boards/2 </br>
+</br>
+-> PRINTS E SCREENCAST: https://drive.google.com/drive/folders/1rBf3_YuBnzbXFQem5CByXFISUi0V8hH5?usp=share_link </br>
+</br>
+-> PROTOTIPO: https://www.figma.com/proto/cnjSoTP36lWWnD29NhaOAN/homepage-(Community)?node-id=203-698&scaling=min-zoom&page-id=203%3A697&starting-point-node-id=203%3A698&show-proto-sidebar=1
