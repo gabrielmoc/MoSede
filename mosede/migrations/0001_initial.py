@@ -39,8 +39,8 @@ class Migration(migrations.Migration):
                 ('date', models.DateTimeField(auto_now_add=True)),
                 ('amount', models.PositiveIntegerField(default=1)),
                 ('total', models.DecimalField(decimal_places=2, max_digits=12)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.product')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.user')),
+                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mosede.product')),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mosede.user')),
             ],
         ),
     ]

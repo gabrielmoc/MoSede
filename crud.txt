@@ -1,0 +1,7 @@
+from mosede.models import User
+
+CREATE
+usuario = User(email="antonio@gmail.com", password="senha", name="Antonio Valença", age=21)
+usuario.save()
+
+checar -> User.objects.all()

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minha Loja - Vinhos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        background-color: hsl(242, 52%, 34%);
+        color: hsl(242, 52%, 34%);
+    }
+
+    .btn-custom {
+        background-color: hsl(140, 74%, 60%);
+        color: hsl(242, 52%, 34%);
+        box-shadow: 5px 2px 5px 1px rgba(0,0,0,0.2);
+        border:none
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MoSede</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Usuário</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrinho</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ir</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h2 class="mb-4">Vinhos</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTJ1QTzfwIYd91Tpl82jaAIIxvI6Q9Y-AtqbympXkaoZvsK6jcGLbMn0YgeXk-izwBIIACLHCbAqZtydxKcSD8vq2-xboDJBvIuBzzflok&usqp=CAE" alt="Vinho 4" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Cabernet Sauvignon</h5>
+                        <p class="card-text">$29.99</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://famigliavalduga.vteximg.com.br/arquivos/ids/159440-450-600/Emm_Terroir-Cabernet-Franc--1-.jpg?v=637734478869730000" alt="Vinho 5" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Cabernet Franc</h5>
+                        <p class="card-text">$34.99</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://www.imigrantesbebidas.com.br/bebida/images/products/full/2049-vinho-santa-carolina-reservado-merlot-750ml.jpg" alt="Vinho 6" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Merlot</h5>
+                        <p class="card-text">$39.99</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://lovino.vtexassets.com/arquivos/ids/156818/HEREFORD-RESERVA-MALBEC.png?v=637552494653400000" alt="Vinho 7" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Malbec</h5>
+                        <p class="card-text">$44.99</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://vinomundi.com.br/wp-content/uploads/2021/10/dv-catena-pinot-noir-pinot-noir.jpg" alt="Vinho 4" style="object-fit: cover; width: 230px; height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Pinot Noir</h5>
+                            <p class="card-text">$29.99</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://vinomundi.com.br/wp-content/uploads/2021/10/dv-catena-chardonnay-chardonnay.jpg" alt="Vinho 5" style="object-fit: cover; width: 230px; height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Chardonnay</h5>
+                            <p class="card-text">$34.99</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://cdn.dooca.store/327/products/domaine-rominger-gewurztraminer-2020-s-sombra_640x640+fill_ffffff.png?v=1677592461&webp=0" alt="Vinho 6" style="object-fit: cover; width: 230px; height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Gewurztraminer</h5>
+                            <p class="card-text">$39.99</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://images.tcdn.com.br/img/img_prod/686651/vinho_villa_francioni_sauvignon_blanc_750ml_32470943_1_20190308181618.jpg" alt="Vinho 7" style="object-fit: cover; width: 230px; height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Sauvignon Blanc</h5>
+                            <p class="card-text">$44.99</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+</body>

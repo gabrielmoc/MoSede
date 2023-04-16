@@ -27,3 +27,10 @@ class Buy(models.Model):
 
     def __str__(self):
         return f"{self.user} comprou {self.amount} x {self.product} em {self.date}"
+
+class Wine(models.Model):
+    wine_name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=12, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.wine_name}"
