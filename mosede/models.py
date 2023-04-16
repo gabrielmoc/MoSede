@@ -34,3 +34,17 @@ class Wine(models.Model):
 
     def __str__(self):
         return f"{self.wine_name}"
+
+class Whisky(models.Model):
+    whisky_name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=12, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.whisky_name}"
+
+class Cerveja(models.Model):
+    cerveja_name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=12, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.cerveja_name}"

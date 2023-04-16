@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Whiskys</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        background-color: hsl(242, 52%, 34%);
+        color: hsl(242, 52%, 34%);
+    }
+
+    .btn-custom {
+        background-color: hsl(140, 74%, 60%);
+        color: hsl(242, 52%, 34%);
+        box-shadow: 5px 2px 5px 1px rgba(0, 0, 0, 0.2);
+        border: none
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">MoSede</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Usuário</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrinho</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ir</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h2 class="mb-4">Whiskys</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://winecom.vteximg.com.br/arquivos/ids/156754-1000-1000/MAKER-S-MARK.png?v=637865763639930000"
+                        alt="Whisky 1" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.0.whisky_name }}</h5>
+                        <p class="card-text">R${{ cards.0.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://www.casalisboa.com.br/loja-virtual/wp-content/uploads/sites/8/2020/05/jack-375ml-616x1024.jpg"
+                        alt="Whisky 2" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.1.whisky_name }}</h5>
+                        <p class="card-text">R${{ cards.1.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://cdn.awsli.com.br/1231/1231345/produto/130185138/40509d8820.jpg"
+                        alt="Whisky 3" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.2.whisky_name }}</h5>
+                        <p class="card-text">R${{ cards.2.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://cdn.awsli.com.br/600x450/897/897819/produto/2033557233a2dc7c6af.jpg"
+                        alt="Whisky 4" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.3.whisky_name }}</h5>
+                        <p class="card-text">R${{ cards.3.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+</body>
+
+</html>

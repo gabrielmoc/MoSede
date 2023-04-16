@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cervejas</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        background-color: hsl(242, 52%, 34%);
+        color: hsl(242, 52%, 34%);
+    }
+
+    .btn-custom {
+        background-color: hsl(140, 74%, 60%);
+        color: hsl(242, 52%, 34%);
+        box-shadow: 5px 2px 5px 1px rgba(0, 0, 0, 0.2);
+        border: none
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">MoSede</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Usuário</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrinho</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ir</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h2 class="mb-4">Cervejas</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://hiperideal.vteximg.com.br/arquivos/ids/196910-1000-1000/567baecddbc33202dd4ec548cd36c7d9_cerveja-brahma-chopp-lata-350ml_lett_1.jpg?v=637792284789200000"
+                        alt="Cerveja 1" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.0.cerveja_name }}</h5>
+                        <p class="card-text">R${{ cards.0.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/beirario/media/uploads/produtos/foto/umkgvaho/file.jpg"
+                        alt="Cerveja 2" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.1.cerveja_name }}</h5>
+                        <p class="card-text">R${{ cards.1.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://www.heineken.com/media-la/01pfxdqq/heineken-original-bottle.png?quality=85"
+                        alt="Cerveja 3" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.2.cerveja_name }}</h5>
+                        <p class="card-text">R${{ cards.2.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://www.imigrantesbebidas.com.br/bebida/images/products/full/137-cerveja-skol-pilsen-lata-269ml.20220610104209.jpg"
+                        alt="Cerveja 4" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.3.cerveja_name }}</h5>
+                        <p class="card-text">R${{ cards.3.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://hiperideal.vteximg.com.br/arquivos/ids/185616-1000-1000/1965328.jpg?v=637359406584800000E"
+                        alt="Cerveja 5" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.4.cerveja_name }}</h5>
+                        <p class="card-text">R${{ cards.4.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://t00987.vtexassets.com/arquivos/ids/155650/Frente.jpg?v=637713945483270000E"
+                        alt="Cerveja 6" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.5.cerveja_name }}</h5>
+                        <p class="card-text">R${{ cards.5.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+</body>
+
+</html>
