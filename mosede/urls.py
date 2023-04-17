@@ -8,5 +8,8 @@ urlpatterns = [
     path('cadastro', views.cadastro, name='cadastro'),
     path('vinhos', views.vinhos, name='vinhos'),
     path('cervejas', views.cervejas, name='cervejas'),
-    path('whiskys', views.whiskys, name='whiskys')
+    path('whiskys', views.whiskys, name='whiskys'),
+    path('enlatados', views.enlatados, name='enlatados'),
+    path('vodkas', views.vodkas, name='vodkas'),
+    path('drinks', views.drinks, name='drinks'),
 ]

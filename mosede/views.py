@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from mosede.models import Wine, Cerveja, Whisky
+from mosede.models import Wine, Cerveja, Whisky, Enlatado, Vodka, Drink
 
 def index(request):
     return render(request, 'index.html')
@@ -22,4 +22,16 @@ def cervejas(request):
 def whiskys(request):
     whiskys = Whisky.objects.all()
     return render(request, 'whiskys.html', {"cards": whiskys})
+
+def enlatados(request):
+    enlatados = Enlatado.objects.all()
+    return render(request, 'enlatados.html', {"cards": enlatados})
+
+def vodkas(request):
+    vodkas = Vodka.objects.all()
+    return render(request, 'vodkas.html', {"cards": vodkas})
+
+def drinks(request):
+    drinks = Drink.objects.all()
+    return render(request, 'drinks.html', {"cards": drinks})
 

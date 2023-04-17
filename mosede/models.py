@@ -48,3 +48,24 @@ class Cerveja(models.Model):
 
     def __str__(self):
         return f"{self.cerveja_name}"
+
+class Enlatado(models.Model):
+    enlatado_name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=12, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.enlatado_name}"
+
+class Vodka(models.Model):
+    vodka_name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=12, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.vodka_name}"
+
+class Drink(models.Model):
+    drink_name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=12, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.drink_name}"

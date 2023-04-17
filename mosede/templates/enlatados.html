@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enlatados</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        background-color: hsl(242, 52%, 34%);
+        color: hsl(242, 52%, 34%);
+    }
+
+    .btn-custom {
+        background-color: hsl(140, 74%, 60%);
+        color: hsl(242, 52%, 34%);
+        box-shadow: 5px 2px 5px 1px rgba(0, 0, 0, 0.2);
+        border: none
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MoSede</a>
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ir</button>
+        </form>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Carrinho</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Usuário</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container my-5">
+        <h2 class="mb-4">Enlatados</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://us-southeast-1.linodeobjects.com/storage/supercentral/media/uploads/produto/beb_mista_skol_beats_269_ml_senses_4e3dc926-a9fe-41a3-96cf-8f468380f22f.jpg"
+                        alt="Enlatado 1" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.0.enlatado_name }}</h5>
+                        <p class="card-text">R${{ cards.0.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://http2.mlstatic.com/D_NQ_NP_608887-MLB46927948582_072021-O.webp"
+                        alt="Enlatado 2" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.1.enlatado_name }}</h5>
+                        <p class="card-text">R${{ cards.1.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://santaluzia.vteximg.com.br/arquivos/ids/975928-740-515/3068153.jpg?v=637625914740170000"
+                        alt="Enlatado 3" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.2.enlatado_name }}</h5>
+                        <p class="card-text">R${{ cards.2.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/351/133/products/negronispritz_site-transparente1-435f73a9d3132f6f6016325000752956-640-0.webp"
+                        alt="Enlatado 4" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cards.3.enlatado_name }}</h5>
+                        <p class="card-text">R${{ cards.3.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
