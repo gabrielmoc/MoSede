@@ -1,15 +1,43 @@
-from django.http import HttpResponse
-from django.shortcuts import render
 from mosede.models import Wine, Cerveja, Whisky, Enlatado, Vodka, Drink
+from mosede.models import User
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login
+from mosede.backends import EmailBackend
+from django.contrib.auth.decorators import login_required
 
 def index(request):
-    return render(request, 'index.html')
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        user = authenticate(request, email=email, password=password)
+        print(user, password, email)
+        if user is not None and user.is_active:
+            login(request, user)
+            print(teste)
+            print(user.is_authenticated)
+            return redirect('homepage')
+        else:
+            error_message = "Email ou senha inválidos"
+            return render(request, 'index.html', {'error_message': error_message})
+    else:
+        return render(request, 'index.html')
 
-def home(request):
+@login_required
+def homepage(request):
     return render(request, 'homepage.html')
 
 def cadastro(request):
-    return render(request, 'cadastro.html')
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        name = request.POST.get('name')
+        age = request.POST.get('age')
+        user = User(email=email, password=password, name=name, age=age)
+        user.save()
+        return redirect('homepage')
+    else:
+        return render(request, 'cadastro.html')
 
 def vinhos(request):
     vinhos = Wine.objects.all()

@@ -1,10 +1,13 @@
 from django.urls import path
-
+from django.contrib import admin
 from . import views
 
+admin.autodiscover()
+
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('homepage', views.home, name='homepage'),
+    path('homepage', views.homepage, name='homepage'),
     path('cadastro', views.cadastro, name='cadastro'),
     path('vinhos', views.vinhos, name='vinhos'),
     path('cervejas', views.cervejas, name='cervejas'),

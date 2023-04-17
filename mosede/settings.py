@@ -51,6 +51,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mosede.urls'
 
+AUTH_USER_MODEL = 'mosede.User'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'mosede.backends.EmailBackend',
+]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
