@@ -30,7 +30,9 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 </br>
 -> PROTOTIPO: https://www.figma.com/proto/cnjSoTP36lWWnD29NhaOAN/homepage-(Community)?node-id=203-698&scaling=min-zoom&page-id=203%3A697&starting-point-node-id=203%3A698&show-proto-sidebar=1 </br>
 </br>
--> HISTORIAS: https://docs.google.com/document/d/1rulWztyiFayBCylx4FCjM__TcGqb24dCXFE0cjCTM9U/edit?usp=sharing
+-> HISTORIAS: https://docs.google.com/document/d/1rulWztyiFayBCylx4FCjM__TcGqb24dCXFE0cjCTM9U/edit?usp=sharing </br>
+</br>
+-> BUG TRACKER E ISSUES: https://docs.google.com/document/d/149WtrOQmHs30inN6qYDWFNG3iKLIHipKxQwIQ1Z0jz0/edit?usp=sharing
 
 # Para instalar o projeto na sua maquina
 -> Crie uma pastar do projeto com o nome do projeto
