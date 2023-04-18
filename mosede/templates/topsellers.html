@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Whiskys</title>
+    <title>Enlatados</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
@@ -42,16 +42,28 @@
         </ul>
     </nav>
     <div class="container my-5">
-        <h2 class="mb-4">Whiskys</h2>
+        <h2 class="mb-4">Top Sellers</h2>
         <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://us-southeast-1.linodeobjects.com/storage/supercentral/media/uploads/produto/beb_mista_skol_beats_269_ml_senses_4e3dc926-a9fe-41a3-96cf-8f468380f22f.jpg"
+                        alt="Enlatado 1" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ enlatados.0.enlatado_name }}</h5>
+                        <p class="card-text">R${{ enlatados.0.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-3 mb-4">
                 <div class="card h-100">
                     <img class="card-img-top"
                         src="https://winecom.vteximg.com.br/arquivos/ids/156754-1000-1000/MAKER-S-MARK.png?v=637865763639930000"
                         alt="Whisky 1" style="object-fit: cover; width: 250px; height: 200px;">
                     <div class="card-body">
-                        <h5 class="card-title">{{ cards.0.whisky_name }}</h5>
-                        <p class="card-text">R${{ cards.0.price }}</p>
+                        <h5 class="card-title">{{ whiskys.0.whisky_name }}</h5>
+                        <p class="card-text">R${{ whiskys.0.price }}</p>
                         <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
                     </div>
                 </div>
@@ -59,11 +71,11 @@
             <div class="col-md-3 mb-4">
                 <div class="card h-100">
                     <img class="card-img-top"
-                        src="https://www.casalisboa.com.br/loja-virtual/wp-content/uploads/sites/8/2020/05/jack-375ml-616x1024.jpg"
-                        alt="Whisky 2" style="object-fit: cover; width: 250px; height: 200px;">
+                        src="https://www.amburana.com/media/catalog/product/cache/1/image/994x/9df78eab33525d08d6e5fb8d27136e95/a/b/absoluit.jpg"
+                        alt="Vodka 1" style="object-fit: cover; width: 250px; height: 200px;">
                     <div class="card-body">
-                        <h5 class="card-title">{{ cards.1.whisky_name }}</h5>
-                        <p class="card-text">R${{ cards.1.price }}</p>
+                        <h5 class="card-title">{{ vodkas.0.vodka_name }}</h5>
+                        <p class="card-text">R${{ vodkas.0.price }}</p>
                         <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
                     </div>
                 </div>
@@ -71,11 +83,11 @@
             <div class="col-md-3 mb-4">
                 <div class="card h-100">
                     <img class="card-img-top"
-                        src="https://cdn.awsli.com.br/1231/1231345/produto/130185138/40509d8820.jpg"
-                        alt="Whisky 3" style="object-fit: cover; width: 250px; height: 200px;">
+                        src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTJ1QTzfwIYd91Tpl82jaAIIxvI6Q9Y-AtqbympXkaoZvsK6jcGLbMn0YgeXk-izwBIIACLHCbAqZtydxKcSD8vq2-xboDJBvIuBzzflok&usqp=CAE"
+                        alt="Vinho 1" style="object-fit: cover; width: 250px; height: 200px;">
                     <div class="card-body">
-                        <h5 class="card-title">{{ cards.2.whisky_name }}</h5>
-                        <p class="card-text">R${{ cards.2.price }}</p>
+                        <h5 class="card-title">{{ vinhos.0.vinho_name }}</h5>
+                        <p class="card-text">R${{ vinhos.0.price }}</p>
                         <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
                     </div>
                 </div>
@@ -83,17 +95,28 @@
             <div class="col-md-3 mb-4">
                 <div class="card h-100">
                     <img class="card-img-top"
-                        src="https://cdn.awsli.com.br/600x450/897/897819/produto/2033557233a2dc7c6af.jpg"
-                        alt="Whisky 4" style="object-fit: cover; width: 250px; height: 200px;">
+                        src="https://img.itdg.com.br/images/recipes/000/128/825/319875/319875_original.jpg"
+                        alt="Drink 1" style="object-fit: cover; width: 252px; height: 200px;">
                     <div class="card-body">
-                        <h5 class="card-title">{{ cards.3.whisky_name }}</h5>
-                        <p class="card-text">R${{ cards.3.price }}</p>
+                        <h5 class="card-title">{{ drinks.0.drink_name }}</h5>
+                        <p class="card-text">R${{ drinks.0.price }}</p>
+                        <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://hiperideal.vteximg.com.br/arquivos/ids/196910-1000-1000/567baecddbc33202dd4ec548cd36c7d9_cerveja-brahma-chopp-lata-350ml_lett_1.jpg?v=637792284789200000"
+                        alt="Cerveja 1" style="object-fit: cover; width: 250px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cervejas.0.cerveja_name }}</h5>
+                        <p class="card-text">R${{ cervejas.0.price }}</p>
                         <a href="#" class="btn btn-outline-dark btn-sm btn-custom">+</a>
                     </div>
                 </div>
             </div>
         </div>
-      
 </body>
 
 </html>

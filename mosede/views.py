@@ -5,25 +5,28 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from mosede.backends import EmailBackend
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.views import LoginView
+from mosede.forms import EmailAuthenticationForm
+# def index(request):
+#     if request.method == 'POST':
+#         email = request.POST.get('email')
+#         password = request.POST.get('password')
+#         user = authenticate(request, email=email, password=password)
+#         print(user, password, email)
+#         if user is not None and user.is_active:
+#             login(request, user)
+#             print(teste)
+#             print(user.is_authenticated)
+#             return redirect('homepage')
+#         else:
+#             error_message = "Email ou senha inválidos"
+#             return render(request, 'index.html', {'error_message': error_message})
+#     else:
+#         return render(request, 'index.html')
+class index(LoginView):
+    authentication_form = EmailAuthenticationForm
+    template_name = 'index.html'
 
-def index(request):
-    if request.method == 'POST':
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        user = authenticate(request, email=email, password=password)
-        print(user, password, email)
-        if user is not None and user.is_active:
-            login(request, user)
-            print(teste)
-            print(user.is_authenticated)
-            return redirect('homepage')
-        else:
-            error_message = "Email ou senha inválidos"
-            return render(request, 'index.html', {'error_message': error_message})
-    else:
-        return render(request, 'index.html')
-
-@login_required
 def homepage(request):
     return render(request, 'homepage.html')
 
@@ -62,4 +65,13 @@ def vodkas(request):
 def drinks(request):
     drinks = Drink.objects.all()
     return render(request, 'drinks.html', {"cards": drinks})
+
+def topsellers(request):
+    drinks = Drink.objects.all()
+    vodkas = Vodka.objects.all()
+    enlatados = Enlatado.objects.all()
+    whiskys = Whisky.objects.all()
+    cervejas = Cerveja.objects.all()
+    vinhos = Wine.objects.all()
+    return render(request, 'topsellers.html', {"drinks": drinks, "vodkas": vodkas, "enlatados": enlatados, "whiskys": whiskys, "vinhos": vinhos, "cervejas": cervejas})
 

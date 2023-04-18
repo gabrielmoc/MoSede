@@ -1,20 +1,16 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-
-from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.contrib.auth.validators import UnicodeUsernameValidator
 
 class UserManager(BaseUserManager):
-    username_validator = UnicodeUsernameValidator()
-
     def create_user(self, email, name, age, password=None):
         if not email:
-            raise ValueError('Users must have an email address')
+            raise ValueError('O usuário deve ter um email válido')
 
         user = self.model(
             email=self.normalize_email(email),
             name=name,
-            age=age
+            age=age,
         )
 
         user.set_password(password)
@@ -23,50 +19,32 @@ class UserManager(BaseUserManager):
 
     def create_superuser(self, email, name, age, password):
         user = self.create_user(
-            email=email,
+            email=self.normalize_email(email),
             name=name,
             age=age,
-            password=password
+            password=password,
         )
+
         user.is_admin = True
+        user.is_superuser = True
         user.save(using=self._db)
         return user
 
-    def get_by_natural_key(self, email):
-        return self.get(email=email)
 
-class User(AbstractBaseUser):
+class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
-    password = models.CharField(max_length=128)
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=30)
     age = models.IntegerField()
-
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
 
-    REQUIRED_FIELDS = ['name', 'age']
-    USERNAME_FIELD = 'email'
-
     objects = UserManager()
 
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['name', 'age']
+
     def __str__(self):
-        return self.name
-
-    def get_full_name(self):
-        return self.name
-
-    def get_short_name(self):
-        return self.name
-
-    def has_perm(self, perm, obj=None):
-        return True
-
-    def has_module_perms(self, app_label):
-        return True
-
-    @property
-    def is_staff(self):
-        return self.is_admin
+        return self.email
 
 class Product(models.Model):
     product_name = models.CharField(max_length=100)
