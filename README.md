@@ -31,3 +31,18 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 -> PROTOTIPO: https://www.figma.com/proto/cnjSoTP36lWWnD29NhaOAN/homepage-(Community)?node-id=203-698&scaling=min-zoom&page-id=203%3A697&starting-point-node-id=203%3A698&show-proto-sidebar=1 </br>
 </br>
 -> HISTORIAS: https://docs.google.com/document/d/1rulWztyiFayBCylx4FCjM__TcGqb24dCXFE0cjCTM9U/edit?usp=sharing
+
+# Para instalar o projeto na sua maquina
+1) Crie uma pastar do projeto com o nome do projeto <br/>
+<br/>
+2) Na pasta, dê um clone nos arquivos que estão nesse repositório (abra o terminal e digite:) <br/>
+ git clone https://github.com/felipesergiob/Filma.git
+<br/>
+3) Quando clonado os arquivos set os ambientes da virtual env <br/>
+python -m virtualenv .venv
+<br/>
+4) Depois, entre na sua virtual env <br/>
+.venv\Scripts\activate
+<br/>
+5) Por último, baixe as bibliotecas que estão em requirements.txt <br/>
+pip install -r requirements.txt
