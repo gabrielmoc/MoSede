@@ -32,7 +32,9 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 </br>
 -> HISTORIAS: https://docs.google.com/document/d/1rulWztyiFayBCylx4FCjM__TcGqb24dCXFE0cjCTM9U/edit?usp=sharing </br>
 </br>
--> BUG TRACKER E ISSUES: https://docs.google.com/document/d/149WtrOQmHs30inN6qYDWFNG3iKLIHipKxQwIQ1Z0jz0/edit?usp=sharing
+-> BUG TRACKER E ISSUES: https://docs.google.com/document/d/149WtrOQmHs30inN6qYDWFNG3iKLIHipKxQwIQ1Z0jz0/edit?usp=sharing </br>
+</br>
+-> DIAGRAMA DE ATIVIDADES DO SISTEMA: https://www.figma.com/file/5whqFl3fcJ2egwtGkuoOjn/Untitled?node-id=0-1&t=U3sBrKYtHIWLFxap-0
 
 # Para instalar o projeto na sua maquina
 -> Crie uma pastar do projeto com o nome do projeto
