@@ -36,13 +36,17 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 1) Crie uma pastar do projeto com o nome do projeto <br/>
 <br/>
 2) Na pasta, dê um clone nos arquivos que estão nesse repositório (abra o terminal e digite:) <br/>
+<br/>
  git clone https://github.com/felipesergiob/Filma.git
 <br/>
 3) Quando clonado os arquivos set os ambientes da virtual env <br/>
+<br/>
 python -m virtualenv .venv
 <br/>
 4) Depois, entre na sua virtual env <br/>
+<br/>
 .venv\Scripts\activate
 <br/>
 5) Por último, baixe as bibliotecas que estão em requirements.txt <br/>
+<br/>
 pip install -r requirements.txt
