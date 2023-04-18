@@ -26,7 +26,7 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 # Links Externos:
 -> JIRA: https://mo-sede.atlassian.net/jira/software/projects/MOS/boards/2 </br>
 </br>
--> PRINTS E SCREENCAST: https://drive.google.com/drive/folders/1rBf3_YuBnzbXFQem5CByXFISUi0V8hH5?usp=share_link </br>
+-> PRINTS E SCREENCAST: https://drive.google.com/drive/folders/18mlUuop3Wao5vUoQUq9HVkULHllPwX1r?authuser=0 </br>
 </br>
 -> PROTOTIPO: https://www.figma.com/proto/cnjSoTP36lWWnD29NhaOAN/homepage-(Community)?node-id=203-698&scaling=min-zoom&page-id=203%3A697&starting-point-node-id=203%3A698&show-proto-sidebar=1 </br>
 </br>
