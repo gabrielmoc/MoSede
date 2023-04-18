@@ -33,20 +33,28 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 -> HISTORIAS: https://docs.google.com/document/d/1rulWztyiFayBCylx4FCjM__TcGqb24dCXFE0cjCTM9U/edit?usp=sharing
 
 # Para instalar o projeto na sua maquina
-1) Crie uma pastar do projeto com o nome do projeto <br/>
+-> Crie uma pastar do projeto com o nome do projeto
 <br/>
-2) Na pasta, dê um clone nos arquivos que estão nesse repositório (abra o terminal e digite:) <br/>
 <br/>
- git clone https://github.com/felipesergiob/Filma.git
+-> Na pasta, dê um clone nos arquivos que estão nesse repositório (abra o terminal e digite:)
 <br/>
-3) Quando clonado os arquivos set os ambientes da virtual env <br/>
+<br/>
+ git clone https://github.com/antoniotvalenca/mosede.git
+<br/>
+<br/>
+-> Quando clonado os arquivos set os ambientes da virtual env
+<br/>
 <br/>
 python -m virtualenv .venv
 <br/>
-4) Depois, entre na sua virtual env <br/>
+<br/>
+-> Depois, entre na sua virtual env
+<br/>
 <br/>
 .venv\Scripts\activate
 <br/>
-5) Por último, baixe as bibliotecas que estão em requirements.txt <br/>
+<br/>
+-> Por último, baixe as bibliotecas que estão em requirements.txt
+<br/>
 <br/>
 pip install -r requirements.txt
