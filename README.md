@@ -39,22 +39,22 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 -> Na pasta, dê um clone nos arquivos que estão nesse repositório (abra o terminal e digite:)
 <br/>
 <br/>
- git clone https://github.com/antoniotvalenca/mosede.git
+"git clone https://github.com/antoniotvalenca/mosede.git"
 <br/>
 <br/>
 -> Quando clonado os arquivos set os ambientes da virtual env
 <br/>
 <br/>
-python -m virtualenv .venv
+"python -m virtualenv .venv"
 <br/>
 <br/>
 -> Depois, entre na sua virtual env
 <br/>
 <br/>
-.venv\Scripts\activate
+".venv\Scripts\activate"
 <br/>
 <br/>
 -> Por último, baixe as bibliotecas que estão em requirements.txt
 <br/>
 <br/>
-pip install -r requirements.txt
+"pip install -r requirements.txt"
