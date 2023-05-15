@@ -4,7 +4,7 @@ PRODUTO: MoSede é o projeto de uma aplicação web que visa intermediar a venda
 
 FUNCIONALIDADES-BASE: Buscar por bebidas, feed de fornecedores e produtos, carrinho de compras;
 
-TECNOLOGIAS: VisualStudio(teste de códigos), Github (commit de códigos), Jira (gestão);
+TECNOLOGIAS: VisualStudio(teste de códigos), Github (commit de códigos), Jira (gestão), Figma (prototipagem);
 
 LINGUAGENS DE PROGRAMAÇÃO: Python-Django;
 
