@@ -11,8 +11,6 @@ LINGUAGENS DE PROGRAMAÇÃO: Python-Django;
 LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 
 # Desenvolvedores (2º período, turma B):
--> Antonio Valença (atvn@cesar.school) <br/>
-<br/>
 -> Gabriel Moura de Oliveira Cavalcanti (gmoc@cesar.school) <br/>
 <br/>
 -> Juliana van der Linden Mota (jvdlm@cesar.school) <br/>
@@ -29,7 +27,7 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 </br>
 -> PROTOTIPO: https://www.figma.com/proto/cnjSoTP36lWWnD29NhaOAN/homepage-(Community)?node-id=203-698&scaling=min-zoom&page-id=203%3A697&starting-point-node-id=203%3A698&show-proto-sidebar=1 </br>
 </br>
--> HISTORIAS: https://docs.google.com/document/d/1rulWztyiFayBCylx4FCjM__TcGqb24dCXFE0cjCTM9U/edit?usp=sharing </br>
+-> HISTORIAS: https://docs.google.com/document/d/1AKNl4xZBxcvCACJkBK14P8V11GxtFBBmDbjWXU5Nj6g/edit </br>
 </br>
 -> BUG TRACKER E ISSUES: https://docs.google.com/document/d/149WtrOQmHs30inN6qYDWFNG3iKLIHipKxQwIQ1Z0jz0/edit?usp=sharing </br>
 </br>
@@ -42,7 +40,7 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 -> Na pasta, dê um clone nos arquivos que estão nesse repositório (abra o terminal e digite:)
 <br/>
 <br/>
-"git clone https://github.com/antoniotvalenca/mosede.git"
+"git clone https://github.com/gabrielmoc/mosede.git"
 <br/>
 <br/>
 -> Quando clonado os arquivos set os ambientes da virtual env
