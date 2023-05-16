@@ -23,15 +23,15 @@ LINGUAGENS DE MARCAÇÃO E ESTILO: Html/CSS;
 # Links Externos:
 -> JIRA: https://mo-sede.atlassian.net/jira/software/projects/MOS/boards/2 </br>
 </br>
--> PRINTS E SCREENCAST: https://drive.google.com/drive/folders/1DxwBomxMhk4iqiV1haxDmqDR6DS91f7n </br>
-</br>
--> JORNADA DO USUÁRIO: https://drive.google.com/drive/folders/1VE2N5MaUfMdw44QzVEOBIw2mAgbwbI5P </br>
-</br>
 -> PROTOTIPO: https://www.figma.com/proto/cnjSoTP36lWWnD29NhaOAN/homepage-(Community)?node-id=203-698&scaling=min-zoom&page-id=203%3A697&starting-point-node-id=203%3A698&show-proto-sidebar=1 </br>
+</br>
+-> PRINTS E SCREENCAST: https://drive.google.com/drive/folders/1DxwBomxMhk4iqiV1haxDmqDR6DS91f7n </br>
 </br>
 -> HISTORIAS: https://docs.google.com/document/d/1AKNl4xZBxcvCACJkBK14P8V11GxtFBBmDbjWXU5Nj6g/edit </br>
 </br>
 -> BUG TRACKER E ISSUES: https://docs.google.com/document/d/149WtrOQmHs30inN6qYDWFNG3iKLIHipKxQwIQ1Z0jz0/edit?usp=sharing </br>
+</br>
+-> JORNADA DO USUÁRIO: https://drive.google.com/drive/folders/1VE2N5MaUfMdw44QzVEOBIw2mAgbwbI5P </br>
 </br>
 -> DIAGRAMA DE ATIVIDADES DO SISTEMA: https://www.figma.com/file/5whqFl3fcJ2egwtGkuoOjn/Untitled?node-id=0-1&t=U3sBrKYtHIWLFxap-0
 
